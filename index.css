@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;600;700&display=swap');
+
+body {
+    background: url(images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    font-family: 'Fredoka', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.container {
+    /* Background */
+    backdrop-filter: blur(5px);
+    background: rgb(0, 0, 0, 0.25);
+
+    /* Make it fill the entire thing */
+    width: 100vw;
+    height: 100vh;
+
+    /* Text color */
+    color: white;
+
+    /* Flexboxify */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.process {
+    /* Spacing */
+    padding: 0.5em 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+
+    /* Background */
+    background: rgb(0, 0, 0, 0.25);
+
+    /* Border */
+    border-radius: 0.5em;
+}
