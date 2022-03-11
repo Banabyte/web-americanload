@@ -1,15 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;600;700&display=swap');
 
+:root {
+    --outerPadding: 1em;
+    --innerPadding: 1em;
+    --borderRadius: 0.5em;
+}
+
 body {
-    background: url(images/bg.jpg) no-repeat center center fixed;
+    /* Background Image */
+    background: url(images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 
+    /* Font be like */
     font-family: 'Fredoka', sans-serif;
 }
 
+/* Remove margin, padding, and font weights */
 * {
     margin: 0;
     padding: 0;
@@ -21,10 +30,6 @@ body {
     backdrop-filter: blur(5px);
     background: rgb(0, 0, 0, 0.25);
 
-    /* Make it fill the entire thing */
-    width: 100vw;
-    height: 100vh;
-
     /* Text color */
     color: white;
 
@@ -34,6 +39,45 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    /* Padding */
+    padding: var(--innerPadding);
+
+    /* Border Radius */
+    border-radius: var(--borderRadius);
+}
+
+.tl {
+    top: var(--outerPadding);
+    left: var(--outerPadding);
+    position: absolute;
+}
+
+.tr {
+    top: var(--outerPadding);
+    right: var(--outerPadding);
+    position: absolute;
+}
+
+.bl {
+    bottom: var(--outerPadding);
+    left: var(--outerPadding);
+    position: absolute;
+}
+
+.br {
+    bottom: var(--outerPadding);
+    right: var(--outerPadding);
+    position: absolute;
+}
+
+.rules {
+    margin-top: var(--innerPadding);
+    font-weight: lighter;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 .process {
